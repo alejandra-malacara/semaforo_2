@@ -1,6 +1,8 @@
 # semaforo_2
 Alejandra Malacara Avila 
+
 practica para realizar un semaforo
+
 Sistema alertizador salvaguarda humano-coche
 
 Descripcion de la practica 
@@ -19,12 +21,19 @@ va a durar en verde.
 Material:
 
 Protoboard
+
 Arduino uno 
+
 leds(rojo, amarillo, verde)
+
 resistencias(10k, 1k, 220 ohms)
+
 potenciometro(10k)
+
 boton pulsador
+
 cables 
+
 
 En la practica se simulara dos semaforos uno peatonal y otro vehicular, el cual este ultimo esta 
 automatizado hasta que el peaton pulse el boton el cual le permitira el paso haciendo detener al semafor
