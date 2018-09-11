@@ -1,0 +1,56 @@
+#define rojoA 4
+#define amarilloA 3
+#define verdeA 2
+#define r 7
+#define v 5
+#define boton 1
+#define tiempo 0
+int reloj=0;
+void setup() {
+ digitalWrite(rojoA, OUTPUT);
+ digitalWrite(amarilloA, OUTPUT);
+digitalWrite(verdeA, OUTPUT);
+digitalWrite(r, OUTPUT);
+digitalWrite(v, OUTPUT);
+digitalWrite(boton, INPUT);
+}
+
+void inicio(){
+  digitalWrite(verdeA, HIGH);
+  digitalWrite(r, HIGH);
+  digitalWrite(rojoA, LOW);
+  digitalWrite(amarilloA, LOW);
+  digitalWrite(v, LOW);
+  }
+  
+void loop() {
+  inicio();
+  reloj=analogRead(tiempo);
+  reloj*=10;
+if(digitalRead(boton)==LOW){
+  }else{
+    for(int i=0; i<4; i++){
+      digitalWrite(verdeA, LOW);
+      delay(500);
+      digitalWrite(verdeA, HIGH);
+      delay(500);
+      }
+      digitalWrite(verdeA, LOW);
+    digitalWrite(amarilloA, HIGH);
+    delay(5000);
+    digitalWrite(amarilloA, LOW);
+   digitalWrite(rojoA, HIGH);
+   digitalWrite(v, HIGH);
+   digitalWrite(r,LOW);//peaton 
+    delay(reloj);
+    digitalWrite(amarilloA, HIGH);
+    delay(1000);
+     for(int i=0; i<4; i++){//peaton verde
+      digitalWrite(v, LOW);
+      delay(500);
+      digitalWrite(v, HIGH);
+      delay(500);
+      }
+      
+    } 
+}
