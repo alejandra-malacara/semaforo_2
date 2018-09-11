@@ -1,0 +1,34 @@
+int rojo=4;
+int amarillo=3;
+int verde=2;
+int pausa=5000; //tiempo de espera de los Leds encendidos
+
+void setup() { //declara los pines 8, 7, 6 como salida.
+  pinMode(rojo, OUTPUT); //LED ROJO
+  pinMode(amarillo, OUTPUT); //LED Amarillo
+  pinMode(verde, OUTPUT); //LED VERDE
+}
+
+void loop() {
+  digitalWrite(rojo, HIGH); //Enciende el Led Rojo
+  delay(pausa);
+  digitalWrite(rojo, LOW); //Apaga el Led Rojo
+  digitalWrite(verde, HIGH); //Enciende el Led Verde
+  delay(pausa);
+  for(int i=0; i<4; i++) { //parpadea el led Verde durante 4 veces indicando el cambio.
+    digitalWrite(verde, LOW);
+    delay(500);
+    digitalWrite(verde, HIGH);
+    delay(500);
+  }
+ digitalWrite(verde, LOW); //Apaga el Led Verde
+  digitalWrite(amarillo, HIGH); //Enciende el Led Amarillo
+  delay(1500);
+  for (int a=0; a<4; a++) { //parpadea el led Amarillo durante 4 veces indicando el cambio.
+    digitalWrite(amarillo, LOW);
+    delay(500);
+    digitalWrite(amarillo, HIGH);
+    delay(500);
+  }
+  digitalWrite(amarillo, LOW); //apaga el Led Amarillo
+}
