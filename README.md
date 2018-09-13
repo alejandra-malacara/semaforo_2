@@ -1,9 +1,15 @@
 # semaforo_2
+Instituto Tecnologico de Leon 
+
+Sistemas Programables 
+
 Alejandra Malacara Avila 
 
-practica para realizar un semaforo
-
 Sistema alertizador salvaguarda humano-coche
+
+
+Practica para realizar un semaforo
+
 
 Descripcion de la practica 
 
@@ -34,11 +40,16 @@ boton pulsador
 
 cables 
 
+Desarrollo 
 
 En la practica se simulara dos semaforos uno peatonal y otro vehicular, el cual este ultimo esta 
 automatizado hasta que el peaton pulse el boton el cual le permitira el paso haciendo detener al semafor
 de los vehiculos, simulando los 4 estados del semaforo los cuales sera que el semaforo vehicular estara en verde
-mientras en de los peatones en rojo, cuando se pulse el boton entonces parpadea 4 veces el led verde y cambia a o
-amarillo despues de un tiempo el led amarillo parpadea otras cuatro veces y cambia a rojo, entonces el led verde 
-del semaforo peatonal prende  
-con el potenciometro podemos controlar el tiempo del led en el semafor peatonal.
+mientras en de los peatones en rojo, cuando se pulse el boton entonces parpadea 4 veces el led verde del semaforo de autos  y cambia a o
+amarillo despues de un tiempo  cambia a rojo, entonces el led verde 
+del semaforo peatonal prende.
+con el potenciometro podemos controlar el tiempo del led en el semafor peatonal, logrando que se pueda dar  ya sea mas tiempo o menos tiempo en el que el led ver de peatones dure encendido.
+
+Conclusion
+
+Como conclusion, de acuerdo a lo leido en la enunciado de la practica, que el semaforo de utos quedara automaticamente prendidio el led verde hasta que el peaton oprima el boton, entonces ambos semaforos comenzaran a hacer los cambios, con el potenciometro se podra variar  el tiempo de duracion de led verde del semaforo de peatones.
